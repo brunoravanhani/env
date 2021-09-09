@@ -6,7 +6,7 @@ You need have installed newly versions of [powershell](https://docs.microsoft.co
 2. Select `CaskaydiaCove NF` on powershell sction settings.json of Windows Terminal:
 ```json
 {
-    "fontFace": "CaskaydiaCove NF", // just copy this line
+    "fontFace": "CaskaydiaCove NF", #just copy this line
     "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "hidden": false,
     "name": "PowerShell",
@@ -38,7 +38,7 @@ Import-Module -Name Terminal-Icons
 
 now save the file
 
-Oh my posh Config file
+## Oh my posh Config file
 ```json
 {
     "final_space": true,
