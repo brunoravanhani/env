@@ -1,6 +1,44 @@
 # Oh-my-posh
 
-Config file
+You need have installed newly versions of [powershell](https://docs.microsoft.com/pt-br/powershell/scripting/install/installing-powershell-core-on-windows) and the official termianl app from windows: [terminal](https://www.microsoft.com/pt-br/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab).
+
+1. First thing to do is install `CaskaydiaCove NF` font [link](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/CascadiaCode.zip?WT.mc_id=-blog-scottha).
+2. Select `CaskaydiaCove NF` on powershell sction settings.json of Windows Terminal:
+```json
+{
+    "fontFace": "CaskaydiaCove NF", // just copy this line
+    "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "hidden": false,
+    "name": "PowerShell",
+    "source": "Windows.Terminal.PowershellCore"
+}
+```
+4. Install Oh my posh on powershell and choose theme file decribed at end of this file:
+
+```powershell
+Install-Module oh-my-posh -Scope CurrentUser
+
+Set-PoshPrompt -Theme .\ohmyposh.json
+```
+5. Install terminal Icons:
+
+```powershell
+Install-Module -Name Terminal-Icons -Repository PSGallery
+
+Import-Module -Name Terminal-Icons
+```
+6. Save configs on `$PROFILE` file:
+
+type: `code $PROFILE`
+
+```
+Set-PoshPrompt -Theme .\ohmyposh.json
+Import-Module -Name Terminal-Icons
+```
+
+now save the file
+
+Oh my posh Config file
 ```json
 {
     "final_space": true,
