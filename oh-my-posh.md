@@ -77,7 +77,13 @@ now save the file
                     "properties": {
                         "display_status": true,
                         "display_stash_count": true,
-                        "display_upstream_icon": true
+                        "display_upstream_icon": true,
+                        "status_colors_enabled": true,
+                        "local_changes_color": "#ff9248",
+                        "ahead_and_behind_color": "#f26d50",
+                        "behind_color": "#f17c37",
+                        "ahead_color": "#89d1dc",
+                        "stash_count_icon": "\uF692 "
                     }
                 },
                 {
